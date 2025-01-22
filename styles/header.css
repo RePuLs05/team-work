@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", serif;
+}
+.Background-shape{
+    width: 100%;
+    height: 536px;
+    background-image: url(../assets/header-background.png);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+/* header */
+header{
+    width: 1080px;
+    height: 68px;
+    font-size: 13px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+/* headre nav */
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 20px 0 20px;
+}
+nav{
+    width: 523px;
+    height: 68px;
+    display: flex;
+    align-items: center; 
+}
+
+h1{
+    font-weight: 600;
+    font-size: 83px;
+    color: rgba(58, 58, 58, 1);
+}
+button{
+    border: none;
+    background: none;
+}
+
+   
+.header-cta-button {
+    display: flex;
+    gap: 15px; 
+}
+
+.header-cta-button button {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    color:rgba(255, 255, 255, 1);
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#sign_in {
+    width: fit-content;
+    height: 33px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(225, 133, 56, 1);
+    
+} 
+.header-cta-button button img {
+    margin-left: 8px; 
+    width: 16px;
+    height: 16px;
+}
+
+.header-content{
+    width: 1080px;
+    height: 596px;
+    margin: 0 auto;
+    
+}
+.header-content-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.content{
+    max-width: 590px;
+    padding-left: 16px;
+}
+.content p{
+    padding-top: 32px;
+    height: 84px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(66, 84, 102, 1);
+    margin-bottom: 32px;
+}
+.content-button{
+    width: 100px;
+    height: 33px;
+    background-color: rgba(10, 37, 64, 1);
+    color:rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+.content-button img{
+    width: 7px;
+    height: 8px;
+    margin-left: 10px;
+}
+.content-second-button{
+    text-align: center;
+    color:  rgba(10, 37, 64, 1);
+}
+.content-second-button img{
+    width: 7px;
+    height: 8px;
+    margin-left: 10px;
+}
+
+
+/* registration FORM */
+
+
+.payment-form {
+    max-width: 270px;
+    height: 536px;
+    background: #ffffff;
+    box-shadow: inset 0 -2px 6px 0 rgba(10, 37, 64, 0.35), 0 30px 60px -30px rgba(0, 0, 0, 0.3), 0 50px 100px -20px rgba(50, 50, 93, 0.25) ;
+    border-radius: 28px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.payment-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.payment-form img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 50px;
+}
+
+.payment-form .price {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.payment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0 );
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.payment-form button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.payment-form .separator {
+    width: 100px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    color: rgba(66, 84, 102, 1);
+    font-size: 12px;
+}
+.payment-form #separator-background{
+    width: auto;
+    height: auto;
+    background-color: rgba(230, 235, 241, 1);
+}
+
+.payment-form form div {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-form form div input {
+    flex: 1;
+}
+.Background-Shadow{
+    width: 537px;
+    height: 571px;
+    background-image: url(../assets/Background_Shadow.png);
+    /* object-position:left ; */
+    /* position: absolute;
+    top: 5%;
+    left: 65%; */
+    z-index: -1;
+    
+}
+
+
+/* .secod-cta-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.support-company-cta{
+ /* width: 100%; */
+ height: 250px;
+ border: 1px solid red;
+  display: flex;
+  align-items: flex-start;
+ flex-wrap: wrap;
+ padding-right: 70px;
+ flex-grow: 1;
+}  
+
+.support-company-cta-wrapper{
+    width: 500px;
+    border: 1px solid black;
+}
+
+    
+
+

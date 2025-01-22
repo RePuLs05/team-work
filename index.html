@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="stripe" style="width: 68px;height: 33px; padding: 4px;">
+        <nav>
+            <ul>
+                <a href="#">Products</a>
+                <a href="#">Solutions</a>
+                <a href="#">Developers</a>
+                <a href="#">Resources</a>
+                <a href="#">Pricing</a>
+            </ul>
+        </nav>
+        <div class="header-cta-button">
+            <button><span>Contact sales</span><img src="./assets/SVG.png" alt="SVG"></button>
+            <button id="sign_in">Sign in<img src="./assets/SVG2.png" alt="SVG2"></button>
+        </div>
+        
+    </header>
+    <section class="Background-shape"></section>
+    <section class="header-content">
+          <section class="header-content-wrapper">
+                <div class="content">
+                    <h1>Financial infrastructure for the internet</h1>
+                    <p>Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.</p>
+                    <button class="content-button"><span>Start now</span><img src="./assets/SVG.png" alt="SVG" ></button>
+                    <button class="content-second-button" ><span>Contact sales</span><img src="./assets/black_icon.png" alt="SVG" ></button>
+                </div>
+                
+            <div class="payment-form">
+                <img src="./assets/input-icon.png" alt="input-icon">
+                <h2>Abstraction Magazine</h2>
+                <p class="price">$19 per month</p>
+                <button>Pay with Apple Pay</button>
+                <div id="separator-background">
+                    <div class="separator">Or pay with card</div>
+                </div>
+            
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+            
+                    <label for="card-number">Card Information</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" name="expiry" placeholder="MM / YY" style="flex: 1;" required>
+                        <input type="text" name="cvc" placeholder="CVC" style="flex: 1;" required>
+                    </div>
+            
+                    <label for="country">Country or region</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <!-- Add more options as needed -->
+                    </select>
+            
+                    <label for="zip">ZIP</label>
+                    <input type="text" id="zip" name="zip" placeholder="ZIP Code" required>
+            
+                    <button type="submit">Pay</button>
+                </form>
+                
+            </div>
+            <!-- <div class="Background-Shadow"></div> -->
+          </section> 
+         
+        
+          <!-- <img class="Background-Shadow" src="./assets/Background_Shadow.png" alt="">     -->
+    </section>
+    <section class="support-company-cta">
+        <section class="support-company-cta-wrapper"></section>
+        <img src="./assets/amazon-logo.png" alt="">
+        <img src="./assets/selsforc-logo.png" alt="">
+        <img src="./assets/google-logo.png" alt="">
+        <img src="./assets/urbn-logo.png" alt="">
+        <img src="./assets/shopify-logo.png" alt="">
+        <img src="./assets/whatsapp-logo.png" alt="">
+        <img src="./assets/bmw-logo.png" alt="">
+        <img src="./assets/mariott-logo.png" alt="">
+  </section>
+   
+</body>
+</html>
