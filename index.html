@@ -7,86 +7,221 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="./assets/logo.png" alt="stripe" style="width: 68px;height: 33px; padding: 4px;">
-        <nav>
-            <ul>
-                <a href="#">Products</a>
-                <a href="#">Solutions</a>
-                <a href="#">Developers</a>
-                <a href="#">Resources</a>
-                <a href="#">Pricing</a>
+  <header>
+    <nav class="nav">
+        <section class="nav-wrapper">
+            <img src="./assets/logo.png" alt="stripe" style="width: 68px;height: 33px; padding: 4px;">
+            <ul class="nav_list">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a class="contact-a">Contact sales<img src="./assets/SVG.png" alt="SVG"></a></li>
+                <li><button class="nav_list-sing-in">Sign in<img src="./assets/SVG2.png" alt="SVG2"></button></li>
             </ul>
-        </nav>
-        <div class="header-cta-button">
-            <button><span>Contact sales</span><img src="./assets/SVG.png" alt="SVG"></button>
-            <button id="sign_in">Sign in<img src="./assets/SVG2.png" alt="SVG2"></button>
+        </section>
+    </nav>
+    <section class="Background-shape"></section>
+    <section class="heder-content">
+    <section class="header-content-wrapper">
+        <div class="content">
+            <h1>Financial infrastructure for the internet</h1>
+            <p>Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.</p>
+            <button class="content-button"><span>Start now</span><img src="./assets/SVG.png" alt="SVG" ></button>
+            <button class="content-second-button" ><span>Contact sales</span><img src="./assets/black_icon.png" alt="SVG" ></button>
         </div>
         
-    </header>
-    <section class="Background-shape"></section>
-    <section class="header-content">
-          <section class="header-content-wrapper">
-                <div class="content">
-                    <h1>Financial infrastructure for the internet</h1>
-                    <p>Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.</p>
-                    <button class="content-button"><span>Start now</span><img src="./assets/SVG.png" alt="SVG" ></button>
-                    <button class="content-second-button" ><span>Contact sales</span><img src="./assets/black_icon.png" alt="SVG" ></button>
-                </div>
-                
-            <div class="payment-form">
-                <img src="./assets/input-icon.png" alt="input-icon">
-                <h2>Abstraction Magazine</h2>
-                <p class="price">$19 per month</p>
-                <button>Pay with Apple Pay</button>
-                <div id="separator-background">
-                    <div class="separator">Or pay with card</div>
-                </div>
-            
-                <form>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-            
-                    <label for="card-number">Card Information</label>
-                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="text" name="expiry" placeholder="MM / YY" style="flex: 1;" required>
-                        <input type="text" name="cvc" placeholder="CVC" style="flex: 1;" required>
-                    </div>
-            
-                    <label for="country">Country or region</label>
-                    <select id="country" name="country" required>
-                        <option value="">Select a country</option>
-                        <option value="us">United States</option>
-                        <option value="ca">Canada</option>
-                        <option value="uk">United Kingdom</option>
-                        <!-- Add more options as needed -->
-                    </select>
-            
-                    <label for="zip">ZIP</label>
-                    <input type="text" id="zip" name="zip" placeholder="ZIP Code" required>
-            
-                    <button type="submit">Pay</button>
-                </form>
-                
+    <div class="payment-form">
+        <img src="./assets/input-icon.png" alt="input-icon">
+        <h2>Abstraction Magazine</h2>
+        <p class="price">$19 per month</p>
+        <button>Pay with Apple Pay</button>
+        <div id="separator-background">
+            <div class="separator">Or pay with card</div>
+        </div>
+    
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+    
+            <label for="card-number">Card Information</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" name="expiry" placeholder="MM / YY" style="flex: 1;" required>
+                <input type="text" name="cvc" placeholder="CVC" style="flex: 1;" required>
             </div>
-            <!-- <div class="Background-Shadow"></div> -->
-          </section> 
-         
+    
+            <label for="country">Country or region</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <!-- Add more options as needed -->
+            </select>
+    
+            <label for="zip">ZIP</label>
+            <input type="text" id="zip" name="zip" placeholder="ZIP Code" required>
+    
+            <button type="submit">Pay</button>
+        </form>
         
-          <!-- <img class="Background-Shadow" src="./assets/Background_Shadow.png" alt="">     -->
-    </section>
-    <section class="support-company-cta">
-        <section class="support-company-cta-wrapper"></section>
-        <img src="./assets/amazon-logo.png" alt="">
-        <img src="./assets/selsforc-logo.png" alt="">
-        <img src="./assets/google-logo.png" alt="">
-        <img src="./assets/urbn-logo.png" alt="">
-        <img src="./assets/shopify-logo.png" alt="">
-        <img src="./assets/whatsapp-logo.png" alt="">
-        <img src="./assets/bmw-logo.png" alt="">
-        <img src="./assets/mariott-logo.png" alt="">
+    </div>
+    <!-- <div class="Background-Shadow"></div> -->
   </section>
+</section> 
+</header>
+    <section class="support-company-cta">
+        <section class="support-company-cta-wrapper">
+            <img class="logo-wrapper" src="./assets/amazon-logo.png" alt="amazon-logo">
+            <img class="logo-wrapper" src="./assets/selsforc-logo.png" alt="selsforc-logo">
+            <img class="logo-wrapper" src="./assets/google-logo.png" alt="google-logo">
+            <img class="logo-wrapper" src="./assets/urbn-logo.png" alt="urbn-logo">
+            <img class="logo-wrapper" src="./assets/shopify-logo.png" alt="shopify-logo">
+            <img class="logo-wrapper" src="./assets/whatsapp-logo.png" alt="whatsapp-logo">
+            <img class="logo-wrapper" src="./assets/bmw-logo.png" alt="bmw-logo">
+            <img class="logo-wrapper" src="./assets/mariott-logo.png" alt="mariott-logo">
+        </section>
+  </section>
+
+  <!-- <main>
    
+    <section class="section" id="section1">
+      <div class="content-pair">
+        <div class="text-content">
+          <h2 class="h22">Modular solutions</h2>
+          <p>A fully integrated suite of financial and payments products. Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform.</p>
+        </div>
+        <div class="image-content">
+          <img src="./assets/1.png" alt="Card Image">
+        </div>
+      </div>
+      <div class="content-pair">
+        <div class="text-content">
+          <h4><img src="./assets/payment.png" alt=""> Payment</h4>
+          <h2>Accept and optimize payments, globally</h2>
+          <p>Increase authorization rates, optimize your checkout conversion, and offer local payment methods in every market.</p>
+        </div>
+        <div class="image-content">
+          <img src="./assets/2.png" alt="Checkout Image">
+        </div>
+      </div>
+      <div class="content-pair">
+        <div class="text-content">
+          <h4><img src="./assets/billing.png" alt=""> Billing</h4>
+          <h2>Capture recurring revenue</h2>
+          <p>Support recurring business models, minimize churn, and automate finance operations.</p>
+
+        </div>
+        <div class="image-content">
+          <img src="./assets/3.png" alt="Billing Image">
+        </div>
+      </div>
+      <div class="content-pair">
+        <div class="text-content">
+          <h4><img src="./assets/connect.png" alt=""> Connect</h4>
+          <h2>Set up multiparty payments and payouts</h2>
+          <p>Integrate payments into your platform or marketplace for end-to-end payments experiences.</p>
+        </div>
+        <div class="image-content">
+          <img src="./assets/4.png" alt="Connect Image">
+        </div>
+      </div>
+      <div class="content-pair">
+        <div class="text-content">
+          <h4><img src="./assets/issuing.png" alt=""> Issuing</h4>
+          <h2>Build a fintech offering with banking-as-a-service</h2>
+          <p>Launch, manage, and scale a commercial card program without any setup fees.</p>
+        </div>
+        <div class="image-content">
+          <img src="./assets/5.png" alt="Issuing Image">
+        </div>
+      </div>
+    </section>
+    
+   </main>
+
+   
+   <section class="subheading-sta-wrapper">
+    <p class="subheading">Enterprise reinvention</p>
+    <h1>Bring agility to your enterprise</h1>
+    <p class="description">
+      You can use Stripe not only to accept payments but also to quickly support new markets, upgrade existing systems and tools, go direct-to-consumer, and engage customers with subscriptions and marketplaces. Get expert integration guidance from our <a href="#">professional services team</a> and <a href="#">certified partners</a>.
+    </p>
+    <button>Contact Sales</button>
+ 
+
+  <section class="highlight">
+    <div class="stats">
+      <div>
+        <h2>5+</h2>
+        <p>Amazon businesses on Stripe, including Prime, Audible, and Amazon Pay.</p>
+      </div>
+      <div>
+        <h2>50+</h2>
+        <p>Payment methods available on Stripe.</p>
+      </div>
+      <div>
+        <p>Products used</p>
+        <span class="tag">Payments</span>
+        <span class="tag">Connect</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/amazon-card.png" alt="Amazon">
+     
+    </div>
+  </section>
+</section>
+  <footer class="logos">
+    <img src="./assets/bmw.png" alt="BMW">
+    <img src="./assets/amazon.png" alt="Amazon">
+    <img src="./assets/maersk.png" alt="Maersk">
+    <img src="./assets/twilio.png" alt="Twilio">
+  </footer>
+
+
+
+
+  <section class="bulit-for-growth">
+  <section class="bulit-for-growth-wrapper">
+    <div class="built-cta-grow ">
+    <p>Built for growth</p>
+    <h1>Take your startup farther, faster</h1>
+    <p>Startups build on Stripe to launch faster, adapt as they grow, and automate workflows to do more with less. Build your own API-based integration or use our low- to no-code solutions, which are simple enough for easy implementation and powerful enough to scale as fast and as far as you need.</p>
+  </div>
+  <div class="container">
+    <div class="card card1">
+      <img src="./assets/atlas.png" alt="Atlas">
+      <div class="card-content">
+        <h3>Incorporate your company</h3>
+        <p>Form a legal entity, issue stock, and start accepting payments.</p>
+      </div>
+    </div>
+    <div class="card card2">
+      <img src="./assets/payment-links.png" alt="Payment Links">
+      <div class="card-content">
+        <h3>Validate your idea</h3>
+        <p>Test your product idea by launching payments with little to no code.</p>
+      </div>
+    </div>
+    <div class="card card3">
+      <img src="./assets/checkout.png" alt="Checkout">
+      <div class="card-content">
+        <h3>Sell to consumers</h3>
+        <p>Launch a B2C business with a prebuilt payment page that’s optimized for conversion.</p>
+      </div>
+    </div>
+    <div class="card card4">
+      <img src="./assets/powdul.png" alt="Invoice">
+      <div class="card-content">
+        <h3>Sell to businesses</h3>
+        <p>Launch a B2B business and collect one-time or recurring payments from customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</section> -->
 </body>
 </html>
